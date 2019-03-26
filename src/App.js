@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 
 import NavHeader from './components/NavHeader';
+import ReviewsContainer from './components/ReviewsContainer';
 
 class App extends Component {
-  state = {};
-
-  componentDidMount = () => {
-    
-  }
-
   render() {
     return (
       <div className="App">
-        <h1>test</h1>
+        <NavHeader />
+
+        <section id="reviews" className="reviews-section">
+          <ReviewsContainer />
+        </section>
       </div>
     );
   }
